@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.shalinibusinesssolutions.deliverymanagementsystem.Fragment.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_upcomingOrderFragment"
+            app:destination="@id/upcomingOrderFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_todayFragment"
+            app:destination="@id/todayFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.shalinibusinesssolutions.deliverymanagementsystem.Fragment.order.OrderFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_order"
+        android:name="com.shalinibusinesssolutions.deliverymanagementsystem.Fragment.order.OrderFragment"
+        android:label="@string/menu_order"
+        tools:layout="@layout/fragment_order" />
+    <fragment
+        android:id="@+id/upcomingOrderFragment"
+        android:name="com.shalinibusinesssolutions.deliverymanagementsystem.Fragment.order.UpcomingOrderFragment"
+        android:label="fragment_upcoming_order"
+        tools:layout="@layout/fragment_upcoming_order" >
+        <action
+            android:id="@+id/action_upcomingOrderFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/todayFragment"
+        android:name="com.shalinibusinesssolutions.deliverymanagementsystem.Fragment.order.TodayFragment"
+        android:label="fragment_today"
+        tools:layout="@layout/fragment_today" >
+        <action
+            android:id="@+id/action_todayFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_todayFragment_to_orderDetailsFragment"
+            app:destination="@id/orderDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderDetailsFragment"
+        android:name="com.shalinibusinesssolutions.deliverymanagementsystem.Fragment.order.OrderDetailsFragment"
+        android:label="fragment_order_details"
+        tools:layout="@layout/fragment_order_details" >
+        <action
+            android:id="@+id/action_orderDetailsFragment_to_todayFragment"
+            app:destination="@id/todayFragment" />
+    </fragment>
+</navigation>
