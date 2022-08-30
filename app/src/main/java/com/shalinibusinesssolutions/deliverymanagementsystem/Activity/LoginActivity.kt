@@ -120,6 +120,7 @@ class LoginActivity : AppCompatActivity() ,View.OnClickListener{
                         {
                             binding.progressbar.visibility = View.VISIBLE
                         }
+                        else -> {}
                     }
                 }
             })

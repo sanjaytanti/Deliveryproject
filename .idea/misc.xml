@@ -22,6 +22,11 @@
         <entry key="..\:/Digmay/Project/Ecommerce/DeliveryManagementSystem/app/src/main/res/layout/singleordetailsbanding.xml" value="0.1796875" />
         <entry key="..\:/Digmay/Project/Ecommerce/DeliveryManagementSystem/app/src/main/res/layout/singletodayorder.xml" value="0.1796875" />
         <entry key="..\:/Digmay/Project/Ecommerce/DeliveryManagementSystem/app/src/main/res/menu/activity_main_drawer.xml" value="0.1796875" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.3046875" />
+        <entry key="app/src/main/res/layout/activity_test.xml" value="0.28802083333333334" />
+        <entry key="app/src/main/res/layout/fragment_order.xml" value="0.3046875" />
+        <entry key="app/src/main/res/layout/fragment_order_details.xml" value="0.3046875" />
+        <entry key="app/src/main/res/layout/fragment_today.xml" value="0.3046875" />
       </map>
     </option>
   </component>
